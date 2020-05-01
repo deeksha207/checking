@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Number</title>
+        <style>
+            body{
+                
+                background-image: url("https://toppng.com/uploads/preview/image-freeuse-download-shape-matters-blur-box-11562919252ebvkaza7fb.png");
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+            .number{
+                width: 50%;
+                border-radius: 5px;
+                height: 300px;
+                margin: 50px auto;
+                background-image: linear-gradient(to right,rgb(25, 107, 139),lightblue);
+            }
+            h1{
+                text-align: center;
+                font-size: 35px;
+                color: rgb(36, 18, 18);
+                padding-top: 15px;
+            }
+            .btn{
+                text-align: center;
+            }
+            button{
+                width: 15%;
+                height: 30px;
+                border-radius: 10px;
+                border: none;
+                color: white;
+                cursor: pointer;
+                background-color: rgb(24, 48, 80);
+            }
+            button:hover{
+                background-color: rgb(42, 71, 134);
+                box-shadow: 1px 1px 1px 1px rgb(10, 22, 37) ;
+            }
+            .par{
+                width: 50%;
+                align-items: center;
+                font-size: large;
+                margin: 30px auto 0 auto;
+                line-height: 22px;
+                color: rgb(243, 233, 233);
+            }
+            span{
+                color: black;
+                font-weight: bold;
+            }
+            @media (max-width:1000px){
+                .number{
+                    width:80%;
+                }
+                h1{
+                    font-size: 30px;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div class="number">
+            <h1>Check variable is type of number or not</h1>
+            <div class="btn"><button type="submit" onclick="check();">Check</button></div>
+            <div class="par" ><p>Note: If your variable value is type of number then it shows your variable value on check otherwise it's show 'NaN'
+               <br>  Here! NaN means that your variable value is 'not a number' , Now check your result by clicking on <span>'Check'</span> button.
+            </p></div>
+        
+        </div>
+        <script type="text/javascript">
+            function check(){
+            var num = window.prompt("Enter your variable value: ");
+            if(num==""){
+                alert('Please give any value as a input not give any space or empty value');
+            }
+            else{
+            let a=Number(num);
+            alert(a);
+            }
+            }
+
+        </script>
+    </body>
+</html>
